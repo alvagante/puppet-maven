@@ -64,6 +64,10 @@ class maven::maven( $version = '2.2.1',
     ensure => link,
     target => "/opt/apache-maven-${version}/bin/mvn",
   }
+  file { '/opt/maven':
+    ensure => link,
+    target => "/opt/apache-maven-${version}",
+  }
   file { '/usr/local/bin/mvn':
     ensure  => absent,
     require => Exec['maven-untar'],
