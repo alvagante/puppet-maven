@@ -12,9 +12,9 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.pattern = 'spec/*/*_spec.rb'
 end
 
-desc "Create a Puppet module."
-task :build => [:clean, :spec] do
-  sh 'puppet-module build'
-end
+#desc "Create a Puppet module."
+#task :build => [:clean, :spec] do
+#  sh 'puppet-module build'
+#end
 
-task :default => :build
+task :default => :spec
