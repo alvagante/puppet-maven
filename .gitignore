@@ -1,3 +1,8 @@
-.project
-pkg
-metadata.json
+/.gradle
+/metadata.json
+/.rvmrc
+build
+pkg/
+Session.vim
+.*.sw[a-z]
+*.un~
